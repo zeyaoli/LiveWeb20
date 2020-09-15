@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what's on my mind...</title>
+    <style>
+      video {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- <header>
+        <h3><i>what's on my mind</i></h3>
+      </header> -->
+      <main>
+        <video autoplay="true" id="webcamElement"></video>
+        <canvas id="canvas" width="640" height="360">
+          <p>This browser doesn’t support the HTML canvas</p>
+        </canvas>
+        <div class="covers">
+          <div class="imgContainer">
+            <img src="assets/7g.jpg" alt="7g" id="7g" />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="assets/TitanicRising.jpg"
+              alt="titanic rising"
+              id="titanic"
+            />
+          </div>
+          <div class="imgContainer">
+            <img src="assets/minor.jpg" alt="minor" id="minor" />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="text/javaScript" src="script.js"></script>
+  </body>
+</html>
