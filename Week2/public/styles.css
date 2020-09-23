@@ -1,0 +1,71 @@
+:root {
+  /* Borders */
+  --border-width: 1px;
+  --border-raised-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-highlight);
+  --border-raised-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-face);
+  --border-sunken-outer: inset -1px -1px var(--button-highlight),
+    inset 1px 1px var(--window-frame);
+  --border-sunken-inner: inset -2px -2px var(--button-face),
+    inset 2px 2px var(--button-shadow);
+
+  --border-window-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-face);
+  --border-window-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-highlight);
+}
+
+body {
+  margin: 0;
+  background-image: url("background.jpg");
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  position: relative;
+  height: 100vh;
+}
+
+.window-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#drawing {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  z-index: 1000;
+  position: absolute;
+}
+
+#myCanvas {
+  width: 492px;
+  height: 230px;
+  background-color: white;
+  border-radius: 0px 0px 7px 7px;
+  border-bottom: 4px solid #003dd7;
+  border-right: 4px solid #003dd7;
+  border-left: 4px solid #003dd7;
+}
+
+.drawing-body {
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  right: 4px;
+  bottom: 7px;
+}
+
+img {
+  border-radius: 0px 0px 7px 7px;
+  border-bottom: 4px solid #003dd7;
+  border-right: 4px solid #003dd7;
+  border-left: 4px solid #003dd7;
+}
